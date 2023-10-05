@@ -1,0 +1,179 @@
+.fundo-combo {
+    background-color: #E9CFA6;
+    margin-left: 2%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.combo-divisao {
+   margin: 0px 10px;
+}
+
+.container-comida {
+    margin-bottom: 25px;
+}
+
+.container-titulo {
+    display: flex;
+    align-items: center;
+}
+.container-titulo-unidade {
+    margin: 0;
+    padding-left: 5px;
+}
+
+.container-bebida {
+    margin-bottom: 25px; 
+}
+
+.container-linha {
+    border-bottom: 1px solid black;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.linha-quantidade {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.container-pagamento {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.pagamento-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagamento-titulo {
+    display: flex;
+    background-color: #FA631C ;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.pagamento-subtitulo {
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+
+.pagamento-button {
+    width: 17%;
+    border-radius: 15px;
+    background-color: #FA631C;
+    color: white;
+    margin-left: 10px;
+    /* height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 0px 10px; */
+    transition: 0.5s;
+}
+
+.pagamento-button:hover {
+    transform: scale(1.05);
+    margin-left: 17px;
+    /* color: black; */
+}
+
+.container-botao-detalhe {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.botao-detalhe {
+    color:white;
+    background-color:#FA631C ;
+    border-radius: 100%;
+    font-size: 19px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.botao-detalhe:hover {
+    transform: scale(1.05);
+}
+
+.image-botao-detalhe {
+    width: 30px;
+    margin: 8px;
+}
+
+.combo-header-titulo {
+    margin-top: 10px;
+}
+
+.combo-nome {
+    font-size: 32px;
+    padding-left: 2%;
+}
+
+.combo-detalhe {
+    height: 100px;
+    margin-bottom: 10px;
+    background-color:#E9CFA6 ;
+    padding-top: 1rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.combo-descricao {
+    margin-left: 35px;
+}
+
+.combo-descricao-item {
+    margin-bottom: 7px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.combo-detalhe-preco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.combo-preco {
+    color:black;
+    font-size: 25px;
+}
+
+.combo-botao {
+    color:white;
+    background-color:#FA631C ;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.combo-botao:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.combo-botao:active {
+    transform: scale(0.98);
+}

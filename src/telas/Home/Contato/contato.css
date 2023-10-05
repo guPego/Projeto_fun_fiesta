@@ -1,0 +1,51 @@
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-container {
+  background-color: #e9cfa6;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  padding: 55px;
+  margin-bottom: 200px;
+  box-shadow: 5px -5px #ec7125;
+}
+
+.contato-container-titulo {
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+
+.contato-container-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.contato-icons-diogo{
+  margin-left: 10px;
+  color:#ec7125;
+}
+.contato-icons-diogo:hover{
+  color: #fff;
+}
+.enderecoContato {
+  font-size: 25px;
+}
+
+.contato-tituloContato {
+  font-weight: bold;
+}
+
+.contato-fraseContato {
+  margin-top: 10px;
+  font-weight: 600;
+}

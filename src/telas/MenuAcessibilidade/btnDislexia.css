@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('./fonts/OpenDyslexic-Regular.otf') format('truetype');
+}
+
+/* .dislexia-filter {
+    font-family: 'OpenDyslexic', Arial, sans-serif ;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff; 
+  } */
+
+.dislexia-filter p,
+.dislexia-filter h1,
+.dislexia-filter h2,
+.dislexia-filter h3,
+.dislexia-filter h4,
+.dislexia-filter h5,
+.dislexia-filter li,
+.dislexia-filter label,
+.dislexia-filter button {
+  font-family: 'OpenDyslexic', Arial, sans-serif;
+  letter-spacing: 4px;
+}
+
+.dislexia-button {
+  /* background-image: url("https://www2.tc.df.gov.br/wp-content/uploads/2017/11/icon-Acessibilidade.png"); */
+  background-size: 86px;
+  background-repeat: no-repeat;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ff0000;
+  color: #ff0000;
+  width: 80px;
+  height: 80px;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  border: solid 2px black;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.outro-button {
+  /* background-image: url("https://www2.tc.df.gov.br/wp-content/uploads/2017/11/icon-Acessibilidade.png"); */
+  background-size: 80px;
+  background-repeat: no-repeat;
+  bottom: 20px;
+  left: 20px;
+  background-color: #696969;
+  color: #ff0000;
+  width: 80px;
+  height: 80px;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  border: solid 2px black;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.divisor {
+  width: 100%;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  align-self: center;
+  left: 50%;
+  top: 50%;
+}
+
+.dislexia-button:hover {
+  /* background-color: #ff6363; */
+  transform: scale(1.03);
+}
+
+/* .dislexia-button.active {
+    }   */
+
+.confirmacao {
+  background-size: 86px;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  /* background-color: #ff0000; */
+  color: #fff;
+  width: 8px;
+  height: 8px;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 200ms;
+  z-index: 1;
+}
+
+.modal-button {
+  background-image: url("https://www2.tc.df.gov.br/wp-content/uploads/2017/11/icon-Acessibilidade.png");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  /* background-color: #ff0000; */
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 200ms;
+  z-index: 2;
+}
+
+.modal-button:hover {
+  transform: scale(1.05);
+}
+
+.titulo-acessibilidade {
+  height: 33%;
+}
+
+.modalAcessibilidade {
+  width: 450px;
+  height: 250px;
+  position: fixed;
+  bottom: 120px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(243, 243, 243);
+  padding: 20px;
+  border: 2px solid rgb(16, 139, 255);
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  animation: slideIn 0.3s forwards;
+  transition: left 0.3s ease-in-out;
+  z-index: 2;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+.div-btn-acessibilidade {
+  width: 30%;
+  height: 45%;
+  padding-top: 7px;
+  border: 2px solid rgb(16, 139, 255);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 15px;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

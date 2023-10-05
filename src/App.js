@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Home from './telas/Home';
+import './app.css'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { BrowserRouter as Router } from "react-router-dom";
+import MainRoutes from "./Router";
+import GlobalStyle from "./GlobalStyle";
+import DislexiaButton from "./telas/MenuAcessibilidade/btnDislexia";
+import Cabecalho from "./navbar/Cabecalho/Cabecalho";
+import Manutencao from "./Manutencao";
+
 
 function App() {
+
+  const [telaPequena, setTelaPequena] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const verificarTamanhoTela = () => {
+      setTelaPequena(window.innerWidth < 1024);
+    };
+
+    window.addEventListener("resize", verificarTamanhoTela);
+
+    return () => {
+      window.removeEventListener("resize", verificarTamanhoTela);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <GlobalStyle />
+    {!telaPequena && (
+      <div>
+        <Cabecalho />
+        <DislexiaButton />
+        <MainRoutes />
+      </div>
+    )}
+    {telaPequena && (
+      <Manutencao />
+    )}
+  </Router>
   );
 }
 

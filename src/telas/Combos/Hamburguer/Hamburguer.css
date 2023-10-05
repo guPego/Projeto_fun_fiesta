@@ -1,0 +1,101 @@
+body{
+    background-color: #141419;    
+}
+
+.card-fundo{
+    width: 90vw;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-bottom: 5vh;
+}
+
+.card-titulo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.card-titulo-um{
+    font-size: 4rem;
+    margin-right: 20px;
+    font-family:Brush Script MT;
+    color:#FA631C ;
+}
+
+.card-titulo-dois{
+    font-size: 2rem;
+    margin-top: 6%;
+    font-family:Brush Script MT;
+    color:#FA631C;
+}
+
+.combo-header {
+    width:80%;
+    background-color:#E9CFA6 ;
+    border-radius: 30px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.combo-header-titulo {
+    margin-top: 10px;
+}
+
+.combo-nome {
+    font-size: 32px;
+    padding-left: 2%;
+}
+
+.combo-detalhe {
+    height: 100px;
+    margin-bottom: 10px;
+    background-color:#E9CFA6 ;
+    padding-top: 1rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.combo-descricao {
+    margin-left: 35px;
+}
+
+.combo-descricao-item {
+    margin-bottom: 7px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.combo-detalhe-preco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.combo-preco {
+    color:black;
+    font-size: 25px;
+}
+
+.combo-botao {
+    color:white;
+    background-color:#FA631C ;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.combo-botao:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.combo-botao:active {
+    transform: scale(0.98);
+} */

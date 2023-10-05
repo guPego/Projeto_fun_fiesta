@@ -1,0 +1,47 @@
+.background {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.manutencao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.manutencao-container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.manutencao-text-logo {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manutencao-logo {
+  width: 15%;
+}
+
+.manutencao-image {
+  width: 40vw;
+}
+
+.manutencao-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  width: 50%;
+}

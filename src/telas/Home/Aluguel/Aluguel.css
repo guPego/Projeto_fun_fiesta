@@ -1,0 +1,147 @@
+.suprema-diogo{
+  --black: #191414;
+  --ash-black: #191414;
+  --white: #fd7702;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #191414;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: #191414;
+  --accent: var(--white);
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--accent);
+}
+.pai-diogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+}
+.extra-diogo{
+  text-decoration: underline;
+  color: #e9cfa6;
+  text-decoration-color: #ec7125;
+
+}
+.borda-diogo{
+  width: 3px;
+  height: 30px;
+  border-radius: 7px;
+  background-color:#fd7702;
+  margin-left: -20px;
+  margin-top: -37px;
+}
+.titulo2-diogo{
+  display: inline;
+}
+
+#progress {
+  display: flex;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  transform: rotate(-90deg);
+}
+
+.extra-alugueis-diogo {
+  width: 30%;
+  height: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+.bg {
+  stroke: var(--accent);
+  opacity: 0.3;
+}
+
+#progress .indicator {
+  stroke: var(--accent);
+}
+
+.ul-diogo {
+  display: flex;
+  list-style: none;
+  height: 40vh;
+  overflow-x: scroll;
+  padding: 20px 0;
+  flex: 0 0 600px;
+}
+.escrita-alugueis-diogo{
+  font-weight: 600;
+}
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #fff3;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
+.digo-diogo-extras{
+  background-color:transparent;
+  margin: 0 10px;
+}
+.digo-diogo-alugueis{
+  background-color:transparent;
+  margin: 25px 10px;
+}
+.fotos-diogo{
+  align-items: flex-end;
+  width: 160px;
+  height: 175px;
+  border-radius: 30px;
+}
+
+.diogo-card-extras {
+  height: 13vh;
+  background-color: #e9cfa6;
+  border-radius: 10px;
+  text-align: center;
+}
+.diogo-card-alugueis{
+  height: 10vh;
+  background-color: #e9cfa6;
+  border-radius: 10px;
+  text-align: center;
+}
+.botao-diogo-alugueis{
+  border-radius: 7px;
+  background-color: #ec7125;
+  color: #f0c888;
+  border-color: #f0c888;
+  font-weight: 700;
+  text-align: center;
+  transition-duration: 0.6s;
+  box-shadow: 3px  -0px #d2642f;
+  width: 150px;
+  margin-left: 3px;
+}
+.botao-diogo-alugueis:hover{
+  background-color: #f5995f; 
+  color: black;
+  cursor: pointer;
+}
+.escrita-alugueis-diogo{
+  color: #000000;
+  font-weight: 600;
+  font-size: large;
+}

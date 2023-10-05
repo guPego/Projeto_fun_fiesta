@@ -1,0 +1,50 @@
+.navbar {
+    height: 7vh;
+}
+
+.carousel-image {
+    width: 100vw;
+    height: 93vh;
+}
+
+.carousel-control-next {
+    z-index: 0;
+}
+.logo-cabecalho-diogo{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.logo-cabecalho-diogo-zindex {
+    z-index: 0;
+}
+
+.bodyCarrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoCentral{
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+    margin-bottom: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoCentralimg{
+    transform: scale(1.0);
+}
+
+.sacola-itens-mensagem-pedro {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}

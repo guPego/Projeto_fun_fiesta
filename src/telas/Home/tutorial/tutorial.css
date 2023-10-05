@@ -1,0 +1,89 @@
+.fundoTutorial{
+    background-color: #191414;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.tutorial-leticia-muito{
+    text-decoration: underline;
+    color: #e9cfa6;
+    text-decoration-color: #ec7125;
+  
+  }
+.borda-tutorial-leticia{
+    width: 3px;
+    height: 30px;
+    border-radius: 7px;
+    background-color:#fd7702;
+    margin-left:-20px;
+    margin-top: -37px;
+}
+  
+.bordaTutorial{
+    border-radius: 15px;
+    background-color: #e9cfa6;
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px -4px  #ec7125;
+    align-items: center;
+    justify-content: center;
+}
+.divTutorial {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    width: 90%;
+    margin: 15px 0;
+}
+.posicaoNumeroTutorial {
+    display: flex;
+    justify-content: center;
+}
+.tutorial-leticia-num{
+    color:#ec7125;
+}
+
+.tituloTutorial{
+    font-weight: 700;
+}
+.subtituloTutorial{
+    font-weight: 600;
+}
+.botao-cadastroTutorial {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastroTutorial{
+    background-color: #ec7125;
+    color: #f0c888;
+    font-weight: bold;
+    font-size: 25px;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.6s;
+    box-shadow: 3px  -0px #d2642f;
+    cursor: pointer;
+    border: none; 
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cadastroTutorial:hover{
+   background-color: #f5995f; 
+   color: black;
+   box-shadow: 3px  -0px #e28d62;
+}
+.cadastroTutorial:active{
+    transform: translateY(4px);
+}
+

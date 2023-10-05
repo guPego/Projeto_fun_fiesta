@@ -1,0 +1,217 @@
+/* 
+*{
+    font-family: helvetica;
+    padding: 0;
+    margin:0; 
+    box-sizing: border-box;
+}
+*/
+
+/* body {
+    background-color: rgb(255, 255, 255);
+} */
+
+.sacola-modal-overlay-pedro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.icon-x-pedro {
+    position: absolute;
+    top: 7px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.icon-x-pedro:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.sacola-content-pedro {
+    width: 23%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    /* border-radius: 15px 0px 0px 15px; */
+    /* margin-top: 2%; */
+    align-self: flex-end;
+    justify-content: center;
+    animation: slideOut 0.3s forwards;
+    transition: right 0.3s ease-in-out;
+    z-index: 0;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.sacola-titulo-pedro {
+    font-size: 30px;
+    text-align: center;
+}
+
+.sacola-itens-pedro {
+    width: 95%;
+    height: 77%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: solid 0.5px rgb(250, 186, 102);
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 1px 1px 1px 0px rgba(134, 134, 134, 0.5);
+    overflow:auto;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #ababab00 #ffffff00;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *.itens::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *.itens::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  *.itens::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 10px;
+    border: 2px solid #ffffff00;
+  }
+
+  .sacola-lista-itens {
+    padding-left: 1rem;
+  }
+
+.sacola-item-pedro {
+    width: 95%;
+    /* height: 60px; */
+    background-color: rgb(253, 246, 220);
+    padding: 10px 0 10px 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 0px rgba(247, 168, 72, 0.8);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.sacola-item-pedro-primeiro {
+    margin-top: 0px;
+}
+
+.sacola-item-combo {
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.sacola-item-valor-botao {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    align-items: center;
+}
+
+.sacola-item-pedro:hover {
+    /* transform: scale(1.01); */
+    background-color: rgb(255, 243, 227);
+}
+
+.sacola-remove-item-pedro {
+    cursor: pointer;
+    padding: 0 15px 0 15px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.sacola-remove-item-pedro:hover {
+    transform: scale(1.3);
+}
+
+.preco-pedro {
+    color: rgb(68, 68, 68);
+}
+
+.sacola-finalizar-pedro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.sacola-valorTotal-pedro {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.sacola-btnFinalizarV-pedro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sacola-btnFinalizar-pedro {
+    width: 140px;
+    height: 40px;
+    background-color: #FA631C;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    border: solid 1px orange;
+    opacity: 1;
+    transition: 200ms;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.sacola-btnFinalizar-pedro:hover {
+    transform: scale(1.05);
+    /* opacity: 0.9; */
+    box-shadow: 2px 2px 1px 0px rgb(151, 149, 149);
+}
+
+.sacola-btnFinalizar-pedro-disable {
+    width: 140px;
+    height: 40px;
+    background-color: #cccccc;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    border-radius: 20px;
+    border: solid 1px black;
+    opacity: 1;
+    transition: 0.7s;
+    cursor: not-allowed;
+}
+
+.sacola-btnFinalizar-pedro-disable:hover {
+    transform: scale(1);
+    cursor: not-allowed;
+}
